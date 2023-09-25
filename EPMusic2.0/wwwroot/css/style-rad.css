@@ -1,0 +1,325 @@
+﻿{
+    % load static %
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+    *, *:before, *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+    input::-ms-clear {
+        display: none;
+    }
+
+button {
+    cursor: pointer;
+}
+
+    button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+a, a:visited {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'GothamPro-Light';
+    src: url('../fonts/gothampro-light.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/gothampro-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/gothampro-light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/gothampro-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/gothampro-light.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/gothampro-light.svg#gothampro-light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-Medium';
+    src: url('../fonts/gothampro-medium.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/gothampro-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/gothampro-medium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/gothampro-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/gothampro-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/gothampro-medium.svg#gothampro-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-Regular';
+    src: url('../fonts/gothampro-regular.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/gothampro-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/gothampro-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/gothampro-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/gothampro-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/gothampro-regular.svg#gothampro-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+
+
+
+* {
+    scrollbar-width: 13px;
+    scrollbar-color: var(--bg-color) #868686;
+}
+
+
+
+
+
+    *::-webkit-scrollbar {
+        width: 13px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: var(--bg-color);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: #868686;
+        border-radius: 10px;
+    }
+
+a:active, a:hover, a {
+    text-decoration: none;
+    color: #666;
+}
+
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: #282828;
+    --light-text-color: #868686;
+}
+
+._container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 20px;
+    color: #FFFFF0;
+    overflow: auto;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    min-width: 360px;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    padding: 0 20px 40px 20px;
+}
+
+.line {
+    width: 100%;
+    border: 0.769288px solid #868686;
+    height: 0;
+    opacity: 0.3;
+}
+
+
+
+.main {
+    padding: 55px 50px 0 50px;
+    gap: 125px;
+}
+
+.main__container {
+    display: flex;
+    flex-direction:column;
+}
+.main__title {
+    font-size: 66px;
+    line-height: 64px;
+    font-family: GothamPro-Regular;
+    margin: 0 0 30px 0;
+}
+.main__author {
+    font-size: 50.1571px;
+    line-height: 48px;
+    font-family: GothamPro-Light;
+    margin: 0 0 80px 0;
+}
+.main__song-content-scrol {
+    margin: 70px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 300px;
+    padding: 0 10px 0 0;
+}
+
+.main__song-content-scrol-item-main {
+    margin: 13px 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__song-content-scrol-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main__song-content-scrol-item-num {
+    margin: 0 38px 0 0;
+}
+
+.main__song-content-scrol-item-num-title {
+    display: flex;
+    margin: 0 10px 0 0;
+}
+
+.main__song-content-titles-item-1 {
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: -0.05em;
+    font-family: GothamPro-Regular;
+}
+
+.main__song-content-titles-item-2 {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.05em;
+    font-family: GothamPro-Light;
+}
+
+.main__song-content-scrol-item-num-title {
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+    font-family: GothamPro-Light;
+}
+
+.main__song-content-scrol-item-time {
+    font-size: 11px;
+    line-height: 11px;
+    font-family: GothamPro-Light;
+}
+.main__cover{
+    width: 520px;
+    height: 520px;
+    overflow: hidden;
+    
+
+}
+    .main__cover img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#btn-add {
+    position: absolute;
+    top: 6%;
+    left: 6%;
+    font-size: 131.314px;
+    line-height: 159px;
+    color: white;
+}
+    #btn-add img {
+        width: 60px;
+        height: 60px;
+        opacity: 1;
+    }
+
+.header_add-btn {
+    padding: 13px 40px;
+    font-size: 16px;
+    display: flex;
+    line-height: 19px;
+    font-family: GothamPro-Regular;
+}
+
+.btns {
+}
+
+.forms {
+    display: none;
+    position: absolute;
+}
+
+.btns:hover .forms {
+    display: block;
+}

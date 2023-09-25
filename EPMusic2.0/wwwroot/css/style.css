@@ -1,0 +1,477 @@
+﻿{
+    % load static %
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+    *, *:before, *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+    input::-ms-clear {
+        display: none;
+    }
+
+button {
+    cursor: pointer;
+}
+
+    button::-moz-focus-inner {
+        padding: 0;
+        border: 0;
+    }
+
+a, a:visited {
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: none;
+    }
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'GothamPro-Light';
+    src: url('../fonts/gothampro-light.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/gothampro-light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/gothampro-light.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/gothampro-light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/gothampro-light.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/gothampro-light.svg#gothampro-light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-Medium';
+    src: url('../fonts/gothampro-medium.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/gothampro-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/gothampro-medium.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/gothampro-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/gothampro-medium.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/gothampro-medium.svg#gothampro-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+@font-face {
+    font-family: 'GothamPro-Regular';
+    src: url('../fonts/gothampro-regular.eot'); /* IE 9 Compatibility Mode */
+    src: url('../fonts/gothampro-regular.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/gothampro-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/gothampro-regular.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/gothampro-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/gothampro-regular.svg#gothampro-regular') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+
+
+
+
+* {
+    scrollbar-width: 13px;
+    scrollbar-color: var(--bg-color) #868686;
+}
+
+
+
+
+
+    *::-webkit-scrollbar {
+        width: 13px;
+    }
+
+    *::-webkit-scrollbar-track {
+        background: var(--bg-color);
+    }
+
+    *::-webkit-scrollbar-thumb {
+        background: #868686;
+        border-radius: 10px;
+    }
+
+a:active, a:hover, a {
+    text-decoration: none;
+    color: #666;
+}
+
+:root {
+    --bg-color: #FFFFFF;
+    --text-color: #282828;
+    --light-text-color: #868686;
+}
+
+._container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+body {
+    height: 100%;
+    line-height: 1;
+    font-size: 20px;
+    color: #FFFFF0;
+    overflow: hidden;
+    position: relative;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100%;
+    min-width: 360px;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    padding: 0 20px;
+}
+
+.line {
+    width: 100%;
+    border: 0.769288px solid #868686;
+    height: 0;
+    opacity: 0.3;
+}
+
+
+
+
+
+
+
+
+
+/*--------header------------------------------------------------*/
+
+.header, a {
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    min-height: 96px;
+    width: 100%;
+    max-width: 1300px;
+    align-items: center;
+}
+
+.header__menu ul {
+    display: flex;
+    font-size: 20px;
+    line-height: 19px;
+    gap: 58px;
+    font-family: GothamPro-Light;
+}
+
+.header__logo {
+    font-size: 36px;
+    line-height: 34px;
+    font-family: GothamPro-Medium;
+}
+
+.header_add-btn {
+    padding: 13px 40px;
+    font-size: 16px;
+    display: flex;
+    line-height: 19px;
+    font-family: GothamPro-Regular;
+}
+.btns{
+    
+}
+
+.forms{
+    display: none;
+    position:absolute;
+}
+.btns:hover .forms{
+    display: block;
+}
+/*--------main------------------------------------------------*/
+.main__songs-scrol-info {
+    display: none;
+}
+
+.main {
+    color: var(--text-color);
+    margin: 55px 0 0 0;
+    display: flex;
+    flex: 1 0 auto;
+    width: 100%;
+    justify-content: center;
+}
+
+.main__container {
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+}
+
+
+
+
+
+
+.main__songs-scrol {
+    overflow: auto;
+    direction: rtl;
+    width: 21%;
+    max-height: 625px;
+    padding: 0 0 100px 0;
+}
+
+.main__songs-scrol-cover img {
+    width: 118px;
+    height: 118px;
+    border: 1px solid #E4E4E4;
+    border-radius: 4px;
+}
+
+.main__songs-scrol-item {
+    
+    margin: 0 0 12px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main__song-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main__song-img-block {
+    position: relative;
+}
+
+.main__song-img {
+    position: relative;
+    z-index: 10;
+}
+
+.main__cover {
+    flex: 60%;
+}
+
+.main__song-content-info {
+    flex: 40%;
+    position: relative;
+    z-index: 5;
+}
+
+.main__song-img img {
+    margin: 0 150px 0 0;
+    border: 1px solid #E4E4E4;
+    filter: drop-shadow(49px 38px 54px rgba(0, 0, 0, 0.25));
+    border-radius: 5px;
+    width: 525px;
+    height: 525px;
+}
+
+.main__illustration {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 70px;
+}
+
+.main__song-content-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+
+
+
+.main__song-content-scrol {
+    margin: 70px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    max-height: 470px;
+    padding: 0 10px 0 0;
+}
+
+.main__song-content-scrol-item-main {
+    margin: 13px 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__song-content-scrol-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.main__song-content-scrol-item-num {
+    margin: 0 38px 0 0;
+}
+
+.main__song-content-scrol-item-num-title {
+    display: flex;
+    margin: 0 10px 0 0;
+}
+
+.main__song-content-titles-item-1 {
+    font-size: 32px;
+    line-height: 31px;
+    letter-spacing: -0.05em;
+    font-family: GothamPro-Regular;
+}
+
+.main__song-content-titles-item-2 {
+    font-size: 24px;
+    line-height: 23px;
+    letter-spacing: -0.05em;
+    font-family: GothamPro-Light;
+}
+
+.main__song-content-scrol-item-num-title {
+    font-size: 17px;
+    line-height: 16px;
+    letter-spacing: -0.05em;
+    font-family: GothamPro-Light;
+}
+
+.main__song-content-scrol-item-time {
+    font-size: 11px;
+    line-height: 11px;
+    font-family: GothamPro-Light;
+}
+/*.main__song-content-scrol .line{
+  margin: 0 10px 0 0;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------controllers------------------------------------------------*/
+/*.controllers__btn-stop {
+    display: none;
+}*/
+
+.controllers {
+    width: 100%;
+    min-height: 86px;
+    background: rgba(249, 249, 249, 0.7);
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    z-index: 20;
+    flex-direction: column;
+    align-items: center;
+}
+.controllers__progress {
+    width: 100%;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    background: #868686;
+}
+
+.controllers__progress-active {
+    position: relative;
+    height: 6px;
+    width: 0%;
+    background: #282828;
+}
+.controllers__btn-item {
+    display: flex;
+    align-items: center;
+    gap: 60%;
+}
+.controllers__circle {
+    width: 15px;
+    height: 15px;
+    background: #282828;
+    position: absolute;
+    left: 100%;
+    border-radius: 100%;
+    top: -5px;
+}
+#btn_stop {
+    display: none;
+}
+
+
+
+
+/*------BG------------------------------------------------*/
+/*.bg{
+  width: 190px;
+  position: absolute;
+  top: 15%;
+  left: 60%;
+  z-index: 1;
+  filter: blur(18px);
+}
+.bg img{
+  width: 190%;
+}*/

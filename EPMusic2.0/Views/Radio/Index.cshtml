@@ -1,0 +1,90 @@
+﻿@{
+    ViewData["Title"] = "Радио";
+
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPMusic</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="CSS/style-rad.css" />
+</head>
+<body>
+    <div class="wrapper _container">
+        <header class="header">
+            <div class="header__logo">EPMusic</div>
+            <div class="header__menu">
+                <nav>
+                    <ul
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Альбом</a></li>
+                        <li> <a class="nav-link text-dark" asp-area="" asp-controller="Lib" asp-action="Index">Библиотека</a></li>
+                        <li><a class="nav-link text-dark" asp-area="" asp-controller="Radio" asp-action="Index">Радио</a></li>
+                    </ul>
+                </nav>
+            </div>
+            @* <button src=="~/Home/AddSong" class="header_add-btn">Добавить</button>*@
+            <div class="btns">
+                <div class="header_add-btn">Добавить</div>
+                <div class="forms">
+                    <form action="~/Home/AddAlbum" target="_blank">
+                        <button class="header_add-btn">Добавить альбом</button>
+                    </form>
+                    <form action="~/Home/AddSong" target="_blank">
+                        <button class="header_add-btn">Добавить плейлист</button>
+                    </form>
+                </div>
+            </div>
+            @*<a class="nav-link text-dark header_add-btn" asp-area="" asp-controller="Home" asp-action="AddSong">Добавить</a>*@
+        </header>
+        <main class="main _container">
+            <div class="main__cover">
+                <img class="main__imglink" src="/IMG/Loading_cover.png" />
+            </div>
+            <div class="main__container">
+                <div class="main__title"></div>
+                <div class="main__author"></div>
+
+                <div class="main__song-content-scrol">
+                    
+                </div>
+            </div>
+
+
+        </main>
+
+        <div class="line"></div>
+        <div class="controllers">
+            <div class="controllers__progress">
+
+                <div class="controllers__progress-active">
+                    <div class="controllers__circle"></div>
+                </div>
+            </div>
+            <div class="controllers__btn-item">
+                <div id="btn_last" class="controllers__btn-last">
+                    <img src="IMG/btn-last.svg">
+                </div>
+                <div class="controllers__btn-play-stop">
+                    <div class="controllers__btn-play">
+                        <a id="btn_play"><img src="~/IMG/btn-play.svg"></a>
+                    </div>
+                    <div class="controllers__btn-stop">
+                        <a id="btn_stop"><img src="~/IMG/btn-stop.svg"></a>
+                    </div>
+                </div>
+                <div id="btn_next" class="controllers__btn-next">
+                    <img src="IMG/btn-next.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/RadPage.js"></script>
+</body>
+</html>
+
+
+
